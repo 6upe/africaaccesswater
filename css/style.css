@@ -99,6 +99,8 @@
 .hero-header {
     background: url(../img/hero.jpg) top right no-repeat;
     background-size: cover;
+    /* height: 100%;
+    width: 100%; */
 }
 
 .service-item {
@@ -244,3 +246,18 @@
     width: 150px;
     height: 150px;
 }
+
+.set{
+    display: grid;
+    grid-template-columns: 48% 48%;
+    padding-left: 20px;
+    gap: 2%;
+  }
+  .dbutton{
+    padding-left: 10px;
+  }
+
+  .dbutton a{
+    width: 20%;
+    margin: 10px;
+  }

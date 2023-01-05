@@ -19,7 +19,7 @@ function donate(){
             window.document.location.href = "https://dashboard.flutterwave.com/donate/fbuza1huqnr8";
             break;
         default:
-             window.document.location.href = "index.html";
+             window.document.location.href = "#";
              break;
     }
 

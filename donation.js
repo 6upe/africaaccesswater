@@ -56,7 +56,7 @@ function donate(){
 
 function SendMessage(amount, currency, user_name, email, message, flutterLink){
     let msg = 'Name: ' + user_name + ' Email: ' + email + ' Donation: ' + currency + amount + ' Message from Donor: ' + message;
-    alert(msg);
+    // alert(msg);
     let whatsappLink = "https://wa.me/26962893773?text=" + msg;
     // window.document.location.href = "https://www.google.com";
 
@@ -73,7 +73,7 @@ function SendMessage(amount, currency, user_name, email, message, flutterLink){
     }, 2000);
 
     // window.open(whatsappLink, "_self");
-    window.open(flutterLink, '_blank');
+    window.open(flutterLink, '_self');
 
 
 

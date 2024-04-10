@@ -243,7 +243,7 @@ nav.navbar.bootsnav .navbar-toggle i{color: #4299ea;}
 --------------------------------------*/
 .welcome-hero {
     position: relative;
-    background:url(../../new-images/IMG-20240219-WA0101.jpg)no-repeat;
+    /* background:url(../../new-images/IMG-20240219-WA0101.jpg)no-repeat; */
     background-position:center;
     background-size:cover;
     text-align: center;
@@ -751,6 +751,13 @@ nav.navbar.bootsnav .navbar-toggle i{color: #4299ea;}
 .single-blog-item:hover{
     box-shadow: 0 10px 20px rgba(21,19,19,.4);
 }
+
+.single-blog-item-img {
+    width: '100%';
+    
+};
+
+
 
 
 /*-------------------------------------

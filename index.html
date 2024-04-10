@@ -50,6 +50,14 @@
     <!--responsive.css-->
     <link rel="stylesheet" href="assets/css/responsive.css" />
 
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      integrity="sha512-qe+S82HOzLVVfcwe3yo4sWjqyb9Kb/9IjDTkNDqxBN+uaAd4d6dSdmPWf2em4nIcDqyfHP+7HLF04zo2akMXew=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
 
@@ -159,7 +167,6 @@
                 data-out="fadeOutUp"
               >
                 <li class="scroll active"><a href="#home">home</a></li>
-                <li class="scroll"><a href="#works">Who we are</a></li>
                 <li class="scroll"><a href="#explore">What we do</a></li>
                 <li class="scroll"><a href="#reviews">Our Projects</a></li>
                 <li class="scroll"><a href="#blog">Management</a></li>
@@ -181,26 +188,49 @@
     <!-- top-area End -->
 
     <!--welcome-hero start -->
-    <section id="home" class="welcome-hero">
+    <section id="home" class="welcome-hero" id="dynamic-bg">
       <div class="container">
         <div class="welcome-hero-txt">
           <h2>Welcome To AFRICA ACCESS WATER</h2>
           <p>
             Africa Access Water (AfAW) is a non-profit organization that
-            promotes, provides and delivers solar-powered water systems in
-            Africa. AfAW affirms that water is at the centre of socio-economic
+            promotes, facilitate and provide solar powered water infrastructure
+            for productive use and improved livelihoods in rural communities of
+            Zambia. AfAW affirms that water is at the centre of socio-economic
             development and advocates that water is a key resource for
             production, food security, and poverty eradication.
           </p>
-		  <button
-		  class="btn primary"
-		  style="background-color: #4299ea; padding: 20px 50px; border-radius: 40px; margin-top: 2%; color: rgb(255, 255, 255);"
-		>
-		  Donate
-		</button>
+          <button
+            class="btn primary"
+            style="
+              background-color: #4299ea;
+              padding: 20px 50px;
+              border-radius: 40px;
+              margin-top: 2%;
+              color: rgb(255, 255, 255);
+            "
+          >
+            Donate
+          </button>
         </div>
       </div>
     </section>
+
+    <script>
+      const welcomeHero = document.querySelector('.welcome-hero');
+      const backgrounds = [
+          'url(./new-images/IMG-20240219-WA0101.jpg) no-repeat center / cover',
+          'url(./new-images/IMG-20240219-WA0103.jpg) no-repeat center / cover',
+          'url(./new-images/IMG-20240219-WA0083.jpg) no-repeat center / cover',// Add additional background image URLs here
+      ];
+  
+      let counter = 0;
+  
+      setInterval(() => {
+          welcomeHero.style.background = backgrounds[counter];
+          counter = (counter + 1) % backgrounds.length;
+      }, 2000);
+  </script>
     <!--/.welcome-hero-->
     <!--welcome-hero end -->
 
@@ -211,38 +241,82 @@
           <ul>
             <li>
               <div class="single-list-topics-content">
-                <h2><a class="counter">9</a></h2>
-                <p  class="text-center" >Solar powered
-					WATER infrastructure</p>
+                <h1>
+                  <i
+                    style="font-size: x-large"
+                    class="fa fa-sun-o"
+                    aria-hidden="true"
+                  ></i>
+                </h1>
+                <p class="text-center">Solar powered WATER infrastructure</p>
               </div>
             </li>
             <li>
               <div class="single-list-topics-content">
-                <h2><a class="counter">210</a></h2>
-                <p  class="text-center">Women households food
-					secure with income</p>
+                <h1>
+                  <i
+                    style="font-size: x-large"
+                    class="fa fa-female"
+                    aria-hidden="true"
+                  ></i>
+                </h1>
+                <h2><a class="counter">510</a></h2>
+                <p class="text-center">
+                  Women households food secure with income
+                </p>
               </div>
             </li>
             <li>
               <div class="single-list-topics-content">
-                
-                <h2><a class="counter">80</a></h2>
-                <p  class="text-center">Young people on Training
-					& producing crops</p>
+                <h1>
+                  <i
+                    style="font-size: x-large"
+                    class="fa fa-graduation-cap"
+                    aria-hidden="true"
+                  ></i>
+                </h1>
+                <h2><a class="counter">200</a></h2>
+                <p class="text-center">
+                  Young people on Training & producing crops
+                </p>
               </div>
             </li>
             <li>
               <div class="single-list-topics-content">
-                
-                <h2><a class="counter">5000</a></h2>
-                <p class="text-center" >people with cleaning drinking water</p>
+                <h1>
+                  <i
+                    style="font-size: x-large"
+                    class="fa fa-tint"
+                    aria-hidden="true"
+                  ></i>
+                </h1>
+                <h2>
+                  <a class="counter">6000</a> & <a class="counter">2500</a>
+                </h2>
+                <p class="text-center">
+                  <i class="fa fa-users"></i> people &
+                  <i class="fa fa-paw"></i> Animals with cleaning drinking water
+                  respectively
+                </p>
               </div>
             </li>
             <li>
               <div class="single-list-topics-content">
-                
-                <h2>US$<a class="counter">150000</a></h2>
-                <p class="text-center">Annually communities’ income from produce</p>
+                <h1>
+                  <i
+                    style="font-size: x-large"
+                    class="fa fa-line-chart"
+                    aria-hidden="true"
+                  ></i>
+                </h1>
+                <h2>
+                  US$<a class="counter">150</a>,<a class="counter">0</a
+                  ><a class="counter">0</a><a class="counter">0</a>
+                </h2>
+                <p class="text-center">
+                  <i class="fas fa-money-bill-wave"></i> Annually communities’
+                  income from produce
+                </p>
               </div>
             </li>
           </ul>
@@ -257,8 +331,8 @@
     <section id="works" class="works">
       <div class="container">
         <div class="section-header">
-          <h2>Who we are</h2>
-          <p>African communities developed through solar-powered water.</p>
+          <h2>Established since 2019</h2>
+          <!-- <p>African communities developed through solar-powered water infrastructure.</p> -->
         </div>
         <!--/.section-header-->
         <div class="works-content">
@@ -272,14 +346,10 @@
                   <a href="#">Our Vision</a>
                 </h2>
                 <p>
-					African communities developed through solar-powered water.
+                  African communities developed through solar-powered water
+                  infrastructure.
                 </p>
-                <button
-                  class="welcome-hero-btn how-work-btn"
-                  onclick="window.location.href='#'"
-                >
-                  read more
-                </button>
+                <button class="welcome-hero-btn how-work-btn">read more</button>
               </div>
             </div>
             <div class="col-md-4 col-sm-6">
@@ -288,17 +358,14 @@
                   <i class="flaticon-networking"></i>
                 </div>
                 <h2>
-                  <a href="#">Our Mission</span></a>
+                  <a href="#">Our Mission</a>
                 </h2>
                 <p>
-					To provide and deliver solar-powered water systems for productive use, food security, socio-economic development and wealth creation to rural communities, urban and new settlements in Africa.
+                  To provide and delivered solar powered water infrastructure in
+                  rural communities for productive use, food security and
+                  improved livelyhood in Zambia and Africa
                 </p>
-                <button
-                  class="welcome-hero-btn how-work-btn"
-                  onclick="window.location.href='#'"
-                >
-                  read more
-                </button>
+                <button class="welcome-hero-btn how-work-btn">read more</button>
               </div>
             </div>
             <div class="col-md-4 col-sm-6">
@@ -309,9 +376,23 @@
                 <h2>
                   <a href="#">Our Objectives</a>
                 </h2>
-                <p>
-					To facilitate and provide solar-powered water to communities for productive use and economic development through human consumption, improved agriculture irrigation, livestock farming and forestation in Africa
-                </p>
+                <p id="dyna-objs">Loading...</p>
+                <script>
+                  const dynaObjs = document.getElementById("dyna-objs");
+                  const objs = [
+                    "1. Rural Community Solar Power Water Infrastructure(Water for productive Use) ",
+                    "2. Increased Agricultural & Community productivity  ",
+                    "3. Sustainable Improved livelihoods, food security and rural economy with Increased income",
+                  ];
+
+                  let count = 0;
+
+                  setInterval(() => {
+                    dynaObjs.textContent = objs[count];
+                    count = (count + 1) % objs.length;
+                  }, 2000);
+                </script>
+
                 <button
                   class="welcome-hero-btn how-work-btn"
                   onclick="window.location.href='#'"
@@ -333,121 +414,131 @@
       <div class="container">
         <div class="section-header">
           <h2>What we do</h2>
-          <p>Our Activities</p>
+          <p>Our Activities (CIRCULAR CANVAS HERE...)</p>
         </div>
         <!--/.section-header-->
         <div class="explore-content">
           <div class="row">
-            
             <div class="col-md-4 col-sm-6">
-				<div class="single-explore-item">
-					<div class="single-explore-img">
-					  <img src="./new-images/IMG-20240219-WA0097.jpg" alt="explore image" />
-					
-					</div>
-					<div class="single-explore-txt bg-theme-1">
-					  <h2><a href="#">Women & Water Empowerment</a></h2>
-					  
-					  <div class="explore-person">
-						<div class="row">
-						  <div class="col-sm-10">
-							<p>
-								We empower women with water for irrigation and the portions of land so that they
-								can be productive, generate income and support their families throughout the year. Water
-								plays an important role in their lives and changes live within a month
-							</p>
-						  </div>
-						</div>
-					  </div>
-					  <div class="explore-open-close-part">
-						<div class="row">
-						  <div class="col-sm-5">
-							<button
-							  class="close-btn"
-							  onclick="window.location.href='#'"
-							>
-							  Read More...
-							</button>
-						  </div>
-						 
-						</div>
-					  </div>
-					</div>
-				  </div>
+              <div class="single-explore-item">
+                <div class="single-explore-img">
+                  <img
+                    src="./new-images/IMG-20240219-WA0097.jpg"
+                    alt="explore image"
+                  />
+                </div>
+                <div class="single-explore-txt bg-theme-1">
+                  <h2><a href="#">Women & Water Empowerment</a></h2>
+
+                  <div class="explore-person">
+                    <div class="row">
+                      <div class="col-sm-10">
+                        <p>
+                          We empower women with water for irrigation and the
+                          portions of land so that they can be productive,
+                          generate income and support their families throughout
+                          the year. Water plays an important role in their lives
+                          and changes live within a month
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="explore-open-close-part">
+                    <div class="row">
+                      <div class="col-sm-5">
+                        <button
+                          class="close-btn"
+                          onclick="window.location.href='#'"
+                        >
+                          Read More...
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
             <div class="col-md-4 col-sm-6">
-				<div class="single-explore-item">
-					<div class="single-explore-img">
-					  <img src="./new-images/IMG-20240219-WA0098.jpg" alt="explore image" />
-					
-					</div>
-					<div class="single-explore-txt bg-theme-1">
-					  <h2><a href="#">Food, Nutrition Security & Climate Change</a></h2>
-					  
-					  <div class="explore-person">
-						<div class="row">
-						  <div class="col-sm-10">
-							<p>
-								Food is a fundamental right for families. Therefore, the production of
-                            nutritious food for families is key in child growth and also for people's health. With high
-                            stunting levels in Africa- water can be used to grow healthy foods without waiting for
-                            rain-fed agriculture.
-							</p>
-						  </div>
-						</div>
-					  </div>
-					  <div class="explore-open-close-part">
-						<div class="row">
-						  <div class="col-sm-5">
-							<button
-							  class="close-btn"
-							  onclick="window.location.href='#'"
-							>
-							  Read More...
-							</button>
-						  </div>
-						 
-						</div>
-					  </div>
-					</div>
-				  </div>
+              <div class="single-explore-item">
+                <div class="single-explore-img">
+                  <img
+                    src="./new-images/IMG-20240219-WA0098.jpg"
+                    alt="explore image"
+                  />
+                </div>
+                <div class="single-explore-txt bg-theme-1">
+                  <h2>
+                    <a href="#">Food, Nutrition Security & Climate Change</a>
+                  </h2>
+
+                  <div class="explore-person">
+                    <div class="row">
+                      <div class="col-sm-10">
+                        <p>
+                          Food is a fundamental right for families. Therefore,
+                          the production of nutritious food for families is key
+                          in child growth and also for people's health. With
+                          high stunting levels in Africa- water can be used to
+                          grow healthy foods without waiting for rain-fed
+                          agriculture.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="explore-open-close-part">
+                    <div class="row">
+                      <div class="col-sm-5">
+                        <button
+                          class="close-btn"
+                          onclick="window.location.href='#'"
+                        >
+                          Read More...
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
             <div class="col-md-4 col-sm-6">
-				<div class="single-explore-item">
-					<div class="single-explore-img">
-					  <img src="./new-images/IMG-20240219-WA0065.jpg" alt="explore image" />
-					
-					</div>
-					<div class="single-explore-txt bg-theme-1">
-					  <h2><a href="#">Research and Advocacy</a></h2>
-					  
-					  <div class="explore-person">
-						<div class="row">
-						  <div class="col-sm-10">
-							<p>
-								We also believe in informed advocacy. This can only be with the body of
-								research. The department of Research and Advocacy informs decision-makers at national,
-								regional and international level on prudent management of water as a resource and provide
-								the solution that benefits the poor and vulnerable.
-							</p>
-						  </div>
-						</div>
-					  </div>
-					  <div class="explore-open-close-part">
-						<div class="row">
-						  <div class="col-sm-5">
-							<button
-							  class="close-btn"
-							  onclick="window.location.href='#'"
-							>
-							  Read More...
-							</button>
-						  </div>
-						 
-						</div>
-					  </div>
-					</div>
-				  </div>
+              <div class="single-explore-item">
+                <div class="single-explore-img">
+                  <img
+                    src="./new-images/IMG-20240219-WA0065.jpg"
+                    alt="explore image"
+                  />
+                </div>
+                <div class="single-explore-txt bg-theme-1">
+                  <h2><a href="#">Research and Advocacy</a></h2>
+
+                  <div class="explore-person">
+                    <div class="row">
+                      <div class="col-sm-10">
+                        <p>
+                          We also believe in informed advocacy. This can only be
+                          with the body of research. The department of Research
+                          and Advocacy informs decision-makers at national,
+                          regional and international level on prudent management
+                          of water as a resource and provide the solution that
+                          benefits the poor and vulnerable.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="explore-open-close-part">
+                    <div class="row">
+                      <div class="col-sm-5">
+                        <button
+                          class="close-btn"
+                          onclick="window.location.href='#'"
+                        >
+                          Read More...
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
             <!-- <div class="col-md-4 col-sm-6">
 				<div class="single-explore-item">
@@ -487,7 +578,6 @@
 					</div>
 				  </div>
             </div> -->
-            
           </div>
         </div>
       </div>
@@ -499,7 +589,7 @@
     <!--reviews start -->
     <section id="reviews" class="reviews">
       <div class="section-header">
-        <h2>our Leadership</h2>
+        <h2>OUR BOARD</h2>
         <p>Our Advisory Board</p>
       </div>
       <!--/.section-header-->
@@ -509,7 +599,11 @@
             <div class="testimonial-description">
               <div class="testimonial-info">
                 <div class="testimonial-img">
-                  <img style="border-radius: 10%; width: 70px;" src="./team/Screenshot(131).png" alt="clients" />
+                  <img
+                    style="border-radius: 10%; width: 70px"
+                    src="./team/Screenshot(131).png"
+                    alt="clients"
+                  />
                 </div>
                 <!--/.testimonial-img-->
                 <div class="testimonial-person">
@@ -521,10 +615,38 @@
               <!--/.testimonial-info-->
               <div class="testimonial-comment">
                 <p class="text-center">
-					Reuben is the Managing Director and Co-Founder of Musika
-					Development Limited one of the biggest organisations in Zambia. He has over 20 Years’
-					experience in Agribusiness, Project Management, Market Systems Development, Value Chain
-					Development, Private Sector Development and Rural Development.
+                  Reuben is the Managing Director and Co-Founder of Musika
+                  Development Limited one of the biggest organisations in
+                  Zambia.
+                </p>
+              </div>
+              <!--/.testimonial-comment-->
+            </div>
+            <!--/.testimonial-description-->
+          </div>
+          <div class="single-testimonial-box">
+            <div class="testimonial-description">
+              <div class="testimonial-info">
+                <div class="testimonial-img">
+                  <img
+                    style="border-radius: 10%; width: 70px"
+                    src="./team/Screenshot(132).png"
+                    alt="clients"
+                  />
+                </div>
+                <!--/.testimonial-img-->
+                <div class="testimonial-person">
+                  <h2>Paul Kapanda</h2>
+                  <h4>Co - Chairperson</h4>
+                </div>
+                <!--/.testimonial-person-->
+              </div>
+              <!--/.testimonial-info-->
+              <div class="testimonial-comment">
+                <p class="text-center">
+                  He has over 20 Years’ experience in Agribusiness, Project
+                  Management, Market Systems Development, Value Chain
+                  Development, Private Sector Development and Rural Development.
                 </p>
               </div>
               <!--/.testimonial-comment-->
@@ -536,22 +658,25 @@
             <div class="testimonial-description">
               <div class="testimonial-info">
                 <div class="testimonial-img">
-                  <img style="border-radius: 10%; width: 70px;" src="./team/Screenshot(130).png" alt="clients" />
+                  <img
+                    style="border-radius: 10%; width: 70px"
+                    src="./team/Screenshot(130).png"
+                    alt="clients"
+                  />
                 </div>
                 <!--/.testimonial-img-->
                 <div class="testimonial-person">
                   <h2>Patriciah Roy Akullo</h2>
                   <h4>Vice Chairperson</h4>
-                  
                 </div>
                 <!--/.testimonial-person-->
               </div>
               <!--/.testimonial-info-->
               <div class="testimonial-comment">
                 <p class="text-center">
-					Patriciah works for Act Alliance Regional Office and DanChurch Aid
-					in Uganda. She has vast experience in Advocacy, Gender, Climate Change, Finance and
-					Development. 
+                  Patriciah works for Act Alliance Regional Office and DanChurch
+                  Aid in Uganda. She has vast experience in Advocacy, Gender,
+                  Climate Change, Finance and Development.
                 </p>
               </div>
               <!--/.testimonial-comment-->
@@ -563,131 +688,280 @@
             <div class="testimonial-description">
               <div class="testimonial-info">
                 <div class="testimonial-img">
-                  <img style="border-radius: 10%; width: 70px;" src="./team/Screenshot(129).png" alt="clients" />
+                  <img
+                    style="border-radius: 10%; width: 70px"
+                    src="./team/Screenshot(129).png"
+                    alt="clients"
+                  />
                 </div>
                 <!--/.testimonial-img-->
-                <div class="testimonial-person ">
+                <div class="testimonial-person">
                   <h2>Maurice Dillon</h2>
                   <h4>Finance & Resource Mobilisation Advisor</h4>
-
                 </div>
                 <!--/.testimonial-person-->
               </div>
               <!--/.testimonial-info-->
               <div class="testimonial-comment">
                 <p class="text-center">
-					Maurice is a Global Investment and Financial Consultant. He has 30
-					years’ experience in structuring, financing and delivery of complex projects.
-					Furthermore, has experience in grant aid and economic development/ knowledge transfer.
-					Maurice graduated from Westminster University in 1985 and was subsequently elected as
-					member of the Royal Institute of British Architects. He is also a Master at Law. 
+                  Maurice is a Global Investment and Financial Consultant. He
+                  has 30 years’ experience in structuring, financing and
+                  delivery of complex projects.
                 </p>
               </div>
               <!--/.testimonial-comment-->
             </div>
             <!--/.testimonial-description-->
           </div>
-          
-         
+
+          <!--/.single-testimonial-box-->
+          <div class="single-testimonial-box">
+            <div class="testimonial-description">
+              <div class="testimonial-info">
+                <div class="testimonial-img">
+                  <img
+                    style="border-radius: 10%; width: 70px"
+                    src="./team/Screenshot(129).png"
+                    alt="clients"
+                  />
+                </div>
+                <!--/.testimonial-img-->
+                <div class="testimonial-person">
+                  <h2>Talent Mudubeka</h2>
+                  <h4>Community Engagement Manager</h4>
+                </div>
+                <!--/.testimonial-person-->
+              </div>
+              <!--/.testimonial-info-->
+              <div class="testimonial-comment">
+                <p class="text-center"></p>
+              </div>
+              <!--/.testimonial-comment-->
+            </div>
+            <!--/.testimonial-description-->
+          </div>
         </div>
       </div>
     </section>
     <!--/.reviews-->
     <!--reviews end -->
 
-	<!--blog start -->
+    <!--blog start -->
     <section id="blog" class="blog">
-		<div class="container">
-		  <div class="section-header">
-			<h2>News and Articles</h2>
-			<p>Always upto date with our latest News and Articles</p>
-		  </div>
+      <div class="container">
+        <div class="section-header">
+          <h2>OUT TEAM</h2>
+          <p>Our Management</p>
+        </div>
+        <!--/.section-header-->
+        <div class="blog-content">
+          <div class="row">
+            <div class="col-md-4 col-sm-6">
+              <div class="single-blog-item">
+                <div class="single-blog-item-img">
+                  <img src="./img/team-2.jpg" alt="blog image" />
+                </div>
+                <div class="single-blog-item-txt">
+                  <h2>
+                    <a href="#">Rodney Katongo</a>
+                  </h2>
+                  <h4>Chief Executive Officer</h4>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 col-sm-6">
+              <div class="single-blog-item">
+                <div class="single-blog-item-img">
+                  <img src="./img/team-3.jpg" alt="blog image" />
+                </div>
+                <div class="single-blog-item-txt">
+                  <h2>
+                    <a href="#">Isaiah Mwanza</a>
+                  </h2>
+                  <h4>Director of Projects</h4>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 col-sm-6">
+              <div class="single-blog-item">
+                <div class="single-blog-item-img">
+                  <img src="./img/testimonial-5.png" alt="blog image" />
+                </div>
+                <div class="single-blog-item-txt">
+                  <h2>
+                    <a href="#">Temwa</a>
+                  </h2>
+                  <h4>Advocacy and Communication Manager</h4>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--/.container-->
+    </section>
+    <!--/.blog-->
+    <!--blog end -->
 
-		  <h1>Articles and News Posts here...</h1>
-		  <!--/.section-header-->
-		  <!-- <div class="blog-content">
-			<div class="row">
-			  <div class="col-md-4 col-sm-6">
-				<div class="single-blog-item">
-				  <div class="single-blog-item-img">
-					<img src="assets/images/blog/b1.jpg" alt="blog image" />
-				  </div>
-				  <div class="single-blog-item-txt">
-					<h2>
-					  <a href="#">How to find your Desired Place more quickly</a>
-					</h2>
-					<h4>
-					  posted <span>by</span> <a href="#">admin</a> march 2018
-					</h4>
-					<p>
-					  Lorem ipsum dolor sit amet, consectetur de adipisicing elit,
-					  sed do eiusmod tempore incididunt ut labore et dolore magna.
-					</p>
-				  </div>
-				</div>
-			  </div>
-			  <div class="col-md-4 col-sm-6">
-				<div class="single-blog-item">
-				  <div class="single-blog-item-img">
-					<img src="assets/images/blog/b2.jpg" alt="blog image" />
-				  </div>
-				  <div class="single-blog-item-txt">
-					<h2>
-					  <a href="#">How to find your Desired Place more quickly</a>
-					</h2>
-					<h4>
-					  posted <span>by</span> <a href="#">admin</a> march 2018
-					</h4>
-					<p>
-					  Lorem ipsum dolor sit amet, consectetur de adipisicing elit,
-					  sed do eiusmod tempore incididunt ut labore et dolore magna.
-					</p>
-				  </div>
-				</div>
-			  </div>
-			  <div class="col-md-4 col-sm-6">
-				<div class="single-blog-item">
-				  <div class="single-blog-item-img">
-					<img src="assets/images/blog/b3.jpg" alt="blog image" />
-				  </div>
-				  <div class="single-blog-item-txt">
-					<h2>
-					  <a href="#">How to find your Desired Place more quickly</a>
-					</h2>
-					<h4>
-					  posted <span>by</span> <a href="#">admin</a> march 2018
-					</h4>
-					<p>
-					  Lorem ipsum dolor sit amet, consectetur de adipisicing elit,
-					  sed do eiusmod tempore incididunt ut labore et dolore magna.
-					</p>
-				  </div>
-				</div>
-			  </div>
-			</div>
-		  </div> -->
-		</div>
-		<!--/.container-->
-	  </section>
-	  <!--/.blog-->
-	  <!--blog end -->
+    <!--blog start -->
+    <section id="blog" class="blog">
+      <div class="container">
+        <div class="section-header">
+          <h2>News and Articles</h2>
+          <p>Always upto date with our latest News and Articles</p>
+        </div>
+        <!--/.section-header-->
+        <div class="blog-content">
+          <div class="row">
+            <div class="col-md-4 col-sm-6">
+              <div class="single-blog-item">
+                <div class="single-blog-item-img">
+                  <img src="./img/blog-1.jpeg" alt="blog image" />
+                </div>
+                <div class="single-blog-item-txt">
+                  <h2>
+                    <a href="#"
+                      >State of Israel through MashaV (Agency for International
+                      Development Cooperation). Support</a
+                    >
+                  </h2>
 
-    
+                  <p>
+                    Africa Access Water received support from the State of
+                    Israel through MashaV (Agency for International Development
+                    Cooperation). read more..
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 col-sm-6">
+              <div class="single-blog-item">
+                <div class="single-blog-item-img">
+                  <img src="./img/blog-2.jpeg" alt="blog image" />
+                </div>
+                <div class="single-blog-item-txt">
+                  <h2>
+                    <a href="#"
+                      >Mphande Projects and Farmer Trainings in Climate Smart
+                      Agriculture</a
+                    >
+                  </h2>
+                  <p>
+                    AfAW and Tevel in Collaboration with Kafue District
+                    Agriculture Office are conducting various training in
+                    Climate Smart Agriculture including nutrition and the link
+                    between irrigation using alternative energy and community
+                    development. read more..
+                  </p>
+                </div>
+              </div>
+            </div>
 
-    
+            <div class="col-md-4 col-sm-6">
+              <div class="single-blog-item">
+                <div class="single-blog-item-img">
+                  <img src="./img/blog 3.jpg" alt="blog image" />
+                </div>
+                <div class="single-blog-item-txt">
+                  <h2>
+                    <a href="#"
+                      >Support the African Position on Climate Change at the
+                      COP27</a
+                    >
+                  </h2>
+                  <p>
+                    AfAW as a member of the Zambia Climate Change Network (ZCCN)
+                    supports the African and Zambia’s position on Climate Change
+                    commitment at the COP27. read more..
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- <div class="col-md-4 col-sm-6">
+              <div class="single-blog-item">
+                <div class="single-blog-item-img">
+                  <img src="./img/blog 4.jpg" alt="blog image" />
+                </div>
+                <div class="single-blog-item-txt">
+                  <h2>
+                    <a href="#"
+                      >Participation at the Environmental Protection
+                      Dialogue.</a
+                    >
+                  </h2>
+                  <p>
+                    AfAW is a strong believer in collaboration and therefore
+                    supports efforts being done by Centre for Environment
+                    Justice (CEJ) who are the pioneers and host of the EPD3.
+                    read more..
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-4 col-sm-6">
+              <div class="single-blog-item">
+                <div class="single-blog-item-img">
+                  <img src="./img/blog 6.jpg" alt="blog image" />
+                </div>
+                <div class="single-blog-item-txt">
+                  <h2>
+                    <a href="#">Congo-Brazzaville News</a>
+                  </h2>
+                  <p>
+                    AfAW is a strong believer in collaboration and therefore
+                    supports efforts being done by Centre for Environment
+                    Justice (CEJ) who are the pioneers and host of the EPD3.read
+                    more..
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-4 col-sm-6">
+              <div class="single-blog-item">
+                <div class="single-blog-item-img">
+                  <img src="./img/blog 1.jpg" alt="blog image" />
+                </div>
+                <div class="single-blog-item-txt">
+                  <h2>
+                    <a href="#">THE BIG REASON WE DO OUR WORK</a>
+                  </h2>
+                  <p>
+                    THE BIG REASON WE DO OUR WORK Clara Mulilanduba is 32 years
+                    of age and has four children. At the start of the project
+                    she told Africa Access Water (AfAW) that she wanted to take
+                    her children to school,read more..
+                  </p>
+                </div>
+              </div>
+            </div> -->
+
+            
+
+          </div>
+          <div class="text-center"><button
+            class="btn btn-primary"
+            >
+               Read More News
+            </button></div>
+        </div>
+      </div>
+      <!--/.container-->
+    </section>
+    <!--/.blog-->
+    <!--blog end -->
 
     <!--subscription strat -->
     <section id="contact" class="subscription">
       <div class="container">
         <div class="subscribe-title text-center">
           <h2>We Need your Help</h2>
-          <p>
-            SUPPORT OUR WORKS BY DONATING, YOUR CHANGE CAN CHANGE LIVES
-          </p>
+          <p>SUPPORT OUR WORKS BY DONATING, YOUR CHANGE CAN CHANGE LIVES</p>
         </div>
         <div class="row">
-			<h1>Donate form here</h1>
-          <!-- <div class="col-sm-12">
+          <div class="col-sm-12">
             <div class="subscription-input-group">
               <form action="#">
                 <input
@@ -699,10 +973,10 @@
                   class="appsLand-btn subscribe-btn"
                   onclick="window.location.href='#'"
                 >
-                  creat account
+                  Donate
                 </button>
               </form>
-            </div> -->
+            </div>
           </div>
         </div>
       </div>
@@ -717,14 +991,13 @@
           <div class="row">
             <div class="col-sm-3">
               <div class="navbar-header">
-                <a class="navbar-brand" href="index.html"
-                  >
-				  <img
-                  src="img/logo.png"
-                  style="width: 4rem; margin-left: 5%"
-                  alt="AfAw logo"
-                />Africa <span>Access </span>Water</a
-              >
+                <a class="navbar-brand" href="index.html">
+                  <img
+                    src="img/logo.png"
+                    style="width: 4rem; margin-left: 5%"
+                    alt="AfAw logo"
+                  />Africa <span>Access </span>Water</a
+                >
               </div>
               <!--/.navbar-header-->
             </div>

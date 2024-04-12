@@ -58,6 +58,43 @@
       referrerpolicy="no-referrer"
     />
 
+    <style>
+      .container-chart {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+    }
+    .chart-container {
+      flex-basis: calc(25% - 20px); /* Adjust width according to your design */
+      margin-bottom: 20px;
+      padding: 10px;
+      border: 1px solid #ccc;
+      box-sizing: border-box;
+      text-align: center;
+    }
+
+    .stat-counter{
+      font-weight: bold;
+      font-size: xx-large;
+      color: #ffffff;
+    }
+
+    @media (min-width: 768px) {
+  /* For big screens */
+  .row-stat {
+    height: 230px; /* Set a fixed height for big screens */
+  }
+}
+
+@media (max-width: 767px) {
+  /* For mobile screens */
+  .row-stat {
+    height: auto; /* Set auto height for mobile screens */
+  }
+}
+
+    </style>
+
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
 
@@ -166,10 +203,10 @@
                 data-in="fadeInDown"
                 data-out="fadeOutUp"
               >
-                <li class="scroll active"><a href="#home">home</a></li>
-                <li class="scroll"><a href="#explore">What we do</a></li>
-                <li class="scroll"><a href="#reviews">Our Projects</a></li>
-                <li class="scroll"><a href="#blog">Management</a></li>
+                <li class="scroll active"><a href="#">home</a></li>
+                <li class="scroll"><a href="#whatwedo">What we do</a></li>
+                <li class="scroll"><a href="#">Our Projects</a></li>
+                <li class="scroll"><a href="#management">Management</a></li>
                 <li class="scroll"><a href="#contact">contact</a></li>
               </ul>
               <!--/.nav -->
@@ -380,9 +417,9 @@
                 <script>
                   const dynaObjs = document.getElementById("dyna-objs");
                   const objs = [
-                    "1. Rural Community Solar Power Water Infrastructure(Water for productive Use) ",
-                    "2. Increased Agricultural & Community productivity  ",
-                    "3. Sustainable Improved livelihoods, food security and rural economy with Increased income",
+                    "1. To facilitate, promote and provide solar powered water infrastructure to rural communities for productive use in agriculture and economic development in Zambia and Africa.",
+                    "2. To advance gender equality and women empowerment through water access for productive use.",
+                    "3. To enhance Africa water economics knowledge and technology through research for better national, regional and global policies fostering  economic development and poverty reduction.",
                   ];
 
                   let count = 0;
@@ -405,14 +442,52 @@
         </div>
       </div>
       <!--/.container-->
+      <div style="background-image: url('./new-images/IMG-20240219-WA0062.jpg'); background-size: cover; background-attachment: fixed;">
+        <div class="row row-stat" style="flex-direction: row; align-items: center; padding: 10px; background-color: rgba(0, 0, 0, 0.5);">
+          <div class="col-md-4 col-sm-6">
+            <div class="single-blog-item">
+              <div class="single-blog-item-txt">
+                <h2 class="text-center">
+                  <a href="#" class="stat-counter counter-stat">78.8</a><a href="" class="stat-counter">%</a> 
+                </h2>
+                <h4 class="text-center" style="color: white;">Zambia’s rural population, are extremely poor.</h4>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-6">
+            <div class="single-blog-item">
+              <div class="single-blog-item-txt">
+                <h2 class="text-center">
+                  <a href="#" class="stat-counter counter-stat">75.0</a><a href="" class="stat-counter">%</a> 
+                </h2>
+                <h4 class="text-center" style="color: white;">75% of Zambia's population, mostly poor farmers reliant on rainfed agriculture, face climate threats, with only four months of viable agricultural productivity yearly</h4>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-6">
+            <div class="single-blog-item">
+              <div class="single-blog-item-txt">
+                <h2 class="text-center">
+                  <a href="#" class="stat-counter counter-stat">70.0</a><a href="" class="stat-counter">%</a> 
+                </h2>
+                <h4 class="text-center" style="color: white;">Solar-powered water increases rural productivity by over 70%.</h4>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      
     </section>
     <!--/.works-->
     <!--works end -->
 
+
+
     <!--explore start -->
     <section id="explore" class="explore">
       <div class="container">
-        <div class="section-header">
+        <div class="section-header" id="whatwedo">
           <h2>What we do</h2>
           <div class="text-center">
             <img style="width: 100%; object-fit: contain;" src="./canvas.png" alt="">
@@ -430,18 +505,15 @@
                     alt="explore image"
                   />
                 </div>
-                <div class="single-explore-txt bg-theme-1">
-                  <h2><a href="#">Women & Water Empowerment</a></h2>
+                <div class="single-explore-txt bg-theme-1v">
+                  <h2><a href="#">                          Water Infrastructure Development in Rural Communities</a></h2>
 
                   <div class="explore-person">
-                    <div class="row">
-                      <div class="col-sm-10">
-                        <p>
-                          We empower women with water for irrigation and the
-                          portions of land so that they can be productive,
-                          generate income and support their families throughout
-                          the year. Water plays an important role in their lives
-                          and changes live within a month
+                    <div class="row ">
+                      <div class="col-sm-10 ">
+                        <p >
+                      Our primary goal is to promote, facilitate, and provide solar-powered water infrastructure to rural and impoverished communities. This infrastructure is for agricultural production, clean drinking water, and filling animal troughs. Water is pivotal in stimulating economic development, especially considering that in rural communities, over 80% of individuals are engaged in farming.
+
                         </p>
                       </div>
                     </div>
@@ -478,12 +550,8 @@
                     <div class="row">
                       <div class="col-sm-10">
                         <p>
-                          Food is a fundamental right for families. Therefore,
-                          the production of nutritious food for families is key
-                          in child growth and also for people's health. With
-                          high stunting levels in Africa- water can be used to
-                          grow healthy foods without waiting for rain-fed
-                          agriculture.
+                          Agricultural Productivity and Markets: We collaborate with partners that offer smart climate agriculture, improved farming techniques, and technology such as drip irrigation becomes critical in ensuring that the infrastructure is utilized effectively and fulfills its intended purpose.
+
                         </p>
                       </div>
                     </div>
@@ -589,9 +657,159 @@
     <!--/.explore-->
     <!--explore end -->
 
+        <!--blog start -->
+        <section id="blog" class="blog">
+          <div class="container">
+            <div class="section-header">
+              <h2>News and Articles</h2>
+              <p>Always upto date with our latest News and Articles</p>
+            </div>
+            <!--/.section-header-->
+            <div class="blog-content">
+              <div class="row">
+                <div class="col-md-4 col-sm-6">
+                  <div class="single-blog-item">
+                    <div class="single-blog-item-img">
+                      <img src="./img/blog-1.jpeg" alt="blog image" />
+                    </div>
+                    <div class="single-blog-item-txt">
+                      <h2>
+                        <a href="#"
+                          >State of Israel through MashaV (Agency for International
+                          Development Cooperation). Support</a
+                        >
+                      </h2>
+    
+                      <p>
+                        Africa Access Water received support from the State of
+                        Israel through MashaV (Agency for International Development
+                        Cooperation). read more..
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4 col-sm-6">
+                  <div class="single-blog-item">
+                    <div class="single-blog-item-img">
+                      <img src="./img/blog-2.jpeg" alt="blog image" />
+                    </div>
+                    <div class="single-blog-item-txt">
+                      <h2>
+                        <a href="#"
+                          >Mphande Projects and Farmer Trainings in Climate Smart
+                          Agriculture</a
+                        >
+                      </h2>
+                      <p>
+                        AfAW and Tevel in Collaboration with Kafue District
+                        Agriculture Office are conducting various training in
+                        Climate Smart Agriculture including nutrition and the link
+                        between irrigation using alternative energy and community
+                        development. read more..
+                      </p>
+                    </div>
+                  </div>
+                </div>
+    
+                <div class="col-md-4 col-sm-6">
+                  <div class="single-blog-item">
+                    <div class="single-blog-item-img">
+                      <img src="./img/blog 3.jpg" alt="blog image" />
+                    </div>
+                    <div class="single-blog-item-txt">
+                      <h2>
+                        <a href="#"
+                          >Support the African Position on Climate Change at the
+                          COP27</a
+                        >
+                      </h2>
+                      <p>
+                        AfAW as a member of the Zambia Climate Change Network (ZCCN)
+                        supports the African and Zambia’s position on Climate Change
+                        commitment at the COP27. read more..
+                      </p>
+                    </div>
+                  </div>
+                </div>
+    
+                <!-- <div class="col-md-4 col-sm-6">
+                  <div class="single-blog-item">
+                    <div class="single-blog-item-img">
+                      <img src="./img/blog 4.jpg" alt="blog image" />
+                    </div>
+                    <div class="single-blog-item-txt">
+                      <h2>
+                        <a href="#"
+                          >Participation at the Environmental Protection
+                          Dialogue.</a
+                        >
+                      </h2>
+                      <p>
+                        AfAW is a strong believer in collaboration and therefore
+                        supports efforts being done by Centre for Environment
+                        Justice (CEJ) who are the pioneers and host of the EPD3.
+                        read more..
+                      </p>
+                    </div>
+                  </div>
+                </div>
+    
+                <div class="col-md-4 col-sm-6">
+                  <div class="single-blog-item">
+                    <div class="single-blog-item-img">
+                      <img src="./img/blog 6.jpg" alt="blog image" />
+                    </div>
+                    <div class="single-blog-item-txt">
+                      <h2>
+                        <a href="#">Congo-Brazzaville News</a>
+                      </h2>
+                      <p>
+                        AfAW is a strong believer in collaboration and therefore
+                        supports efforts being done by Centre for Environment
+                        Justice (CEJ) who are the pioneers and host of the EPD3.read
+                        more..
+                      </p>
+                    </div>
+                  </div>
+                </div>
+    
+                <div class="col-md-4 col-sm-6">
+                  <div class="single-blog-item">
+                    <div class="single-blog-item-img">
+                      <img src="./img/blog 1.jpg" alt="blog image" />
+                    </div>
+                    <div class="single-blog-item-txt">
+                      <h2>
+                        <a href="#">THE BIG REASON WE DO OUR WORK</a>
+                      </h2>
+                      <p>
+                        THE BIG REASON WE DO OUR WORK Clara Mulilanduba is 32 years
+                        of age and has four children. At the start of the project
+                        she told Africa Access Water (AfAW) that she wanted to take
+                        her children to school,read more..
+                      </p>
+                    </div>
+                  </div>
+                </div> -->
+    
+                
+    
+              </div>
+              <div class="text-center"><button
+                class="btn btn-primary"
+                >
+                   Read More News
+                </button></div>
+            </div>
+          </div>
+          <!--/.container-->
+        </section>
+        <!--/.blog-->
+        <!--blog end -->
+
     <!--reviews start -->
     <section id="reviews" class="reviews">
-      <div class="section-header">
+      <div class="section-header" id="management">
         <h2>OUR BOARD</h2>
         <p>Our Advisory Board</p>
       </div>
@@ -750,7 +968,7 @@
     <!--reviews end -->
 
     <!--blog start -->
-    <section id="blog" class="blog">
+    <!-- <section id="blog" class="blog"> -->
       <div class="container">
         <div class="section-header">
           <h2>OUT TEAM</h2>
@@ -802,159 +1020,11 @@
         </div>
       </div>
       <!--/.container-->
-    </section>
+    <!-- </section> -->
     <!--/.blog-->
     <!--blog end -->
 
-    <!--blog start -->
-    <section id="blog" class="blog">
-      <div class="container">
-        <div class="section-header">
-          <h2>News and Articles</h2>
-          <p>Always upto date with our latest News and Articles</p>
-        </div>
-        <!--/.section-header-->
-        <div class="blog-content">
-          <div class="row">
-            <div class="col-md-4 col-sm-6">
-              <div class="single-blog-item">
-                <div class="single-blog-item-img">
-                  <img src="./img/blog-1.jpeg" alt="blog image" />
-                </div>
-                <div class="single-blog-item-txt">
-                  <h2>
-                    <a href="#"
-                      >State of Israel through MashaV (Agency for International
-                      Development Cooperation). Support</a
-                    >
-                  </h2>
 
-                  <p>
-                    Africa Access Water received support from the State of
-                    Israel through MashaV (Agency for International Development
-                    Cooperation). read more..
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-4 col-sm-6">
-              <div class="single-blog-item">
-                <div class="single-blog-item-img">
-                  <img src="./img/blog-2.jpeg" alt="blog image" />
-                </div>
-                <div class="single-blog-item-txt">
-                  <h2>
-                    <a href="#"
-                      >Mphande Projects and Farmer Trainings in Climate Smart
-                      Agriculture</a
-                    >
-                  </h2>
-                  <p>
-                    AfAW and Tevel in Collaboration with Kafue District
-                    Agriculture Office are conducting various training in
-                    Climate Smart Agriculture including nutrition and the link
-                    between irrigation using alternative energy and community
-                    development. read more..
-                  </p>
-                </div>
-              </div>
-            </div>
-
-            <div class="col-md-4 col-sm-6">
-              <div class="single-blog-item">
-                <div class="single-blog-item-img">
-                  <img src="./img/blog 3.jpg" alt="blog image" />
-                </div>
-                <div class="single-blog-item-txt">
-                  <h2>
-                    <a href="#"
-                      >Support the African Position on Climate Change at the
-                      COP27</a
-                    >
-                  </h2>
-                  <p>
-                    AfAW as a member of the Zambia Climate Change Network (ZCCN)
-                    supports the African and Zambia’s position on Climate Change
-                    commitment at the COP27. read more..
-                  </p>
-                </div>
-              </div>
-            </div>
-
-            <!-- <div class="col-md-4 col-sm-6">
-              <div class="single-blog-item">
-                <div class="single-blog-item-img">
-                  <img src="./img/blog 4.jpg" alt="blog image" />
-                </div>
-                <div class="single-blog-item-txt">
-                  <h2>
-                    <a href="#"
-                      >Participation at the Environmental Protection
-                      Dialogue.</a
-                    >
-                  </h2>
-                  <p>
-                    AfAW is a strong believer in collaboration and therefore
-                    supports efforts being done by Centre for Environment
-                    Justice (CEJ) who are the pioneers and host of the EPD3.
-                    read more..
-                  </p>
-                </div>
-              </div>
-            </div>
-
-            <div class="col-md-4 col-sm-6">
-              <div class="single-blog-item">
-                <div class="single-blog-item-img">
-                  <img src="./img/blog 6.jpg" alt="blog image" />
-                </div>
-                <div class="single-blog-item-txt">
-                  <h2>
-                    <a href="#">Congo-Brazzaville News</a>
-                  </h2>
-                  <p>
-                    AfAW is a strong believer in collaboration and therefore
-                    supports efforts being done by Centre for Environment
-                    Justice (CEJ) who are the pioneers and host of the EPD3.read
-                    more..
-                  </p>
-                </div>
-              </div>
-            </div>
-
-            <div class="col-md-4 col-sm-6">
-              <div class="single-blog-item">
-                <div class="single-blog-item-img">
-                  <img src="./img/blog 1.jpg" alt="blog image" />
-                </div>
-                <div class="single-blog-item-txt">
-                  <h2>
-                    <a href="#">THE BIG REASON WE DO OUR WORK</a>
-                  </h2>
-                  <p>
-                    THE BIG REASON WE DO OUR WORK Clara Mulilanduba is 32 years
-                    of age and has four children. At the start of the project
-                    she told Africa Access Water (AfAW) that she wanted to take
-                    her children to school,read more..
-                  </p>
-                </div>
-              </div>
-            </div> -->
-
-            
-
-          </div>
-          <div class="text-center"><button
-            class="btn btn-primary"
-            >
-               Read More News
-            </button></div>
-        </div>
-      </div>
-      <!--/.container-->
-    </section>
-    <!--/.blog-->
-    <!--blog end -->
 
     <!--subscription strat -->
     <section id="contact" class="subscription">
@@ -986,6 +1056,13 @@
     </section>
     <!--/subscription-->
     <!--subscription end -->
+
+
+    <div class="container">
+      <div class="row">
+        PATNERS HERE...
+      </div>
+    </div>
 
     <!--footer start-->
     <footer id="footer" class="footer">

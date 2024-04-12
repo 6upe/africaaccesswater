@@ -108,4 +108,11 @@ $(document).ready(function(){
 			});	
 		});
 
+		$(window).on('load', function(){	
+			$('.counter-stat').counterUp({
+				delay: 10,
+				time: 3000
+			});	
+		});
+
 });

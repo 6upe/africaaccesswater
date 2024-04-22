@@ -3,7 +3,7 @@
   <head>
     <!-- meta data -->
     <meta charset="utf-8" />
-    <title>Africa Water Access | Official</title>
+    <title>Africa Water Access | Projects</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport" />
     <meta content="NGO | africa | water | non-governmental" name="keywords" />
     <meta
@@ -57,25 +57,28 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous"> -->
 
     <style>
-      .project-card {
-        margin: 50px 10px;
+      .container-chart {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
       }
-      .project-image {
-        margin: 10px;
+      .chart-container {
+        flex-basis: calc(
+          25% - 20px
+        ); /* Adjust width according to your design */
+        margin-bottom: 20px;
+        padding: 10px;
+        border: 1px solid #ccc;
+        box-sizing: border-box;
+        text-align: center;
       }
-      .project-body{
-        padding: 20px;
-      }
-      .project-body p{
-        text-align: justify;
-      }
-      .project-body h4{
-        padding-top: 10px;
-        padding-bottom: 10px;
-        font-weight: bolder;
+
+      .stat-counter {
+        font-weight: bold;
+        font-size: xx-large;
+        color: #ffffff;
       }
 
       @media (min-width: 768px) {
@@ -118,35 +121,30 @@
           <div class="header-top-left">
             <ul>
               <li class="select-opt">
-                <select name="language" id="language">
+                <!-- <select name="language" id="language">
                   <option value="default">EN</option>
                   <option value="Bangla">BN</option>
                   <option value="Arabic">AB</option>
-                </select>
+                </select> -->
+                <div id="google_translate_element"></div>
+                
               </li>
-              <li class="select-opt">
-                <select name="currency" id="currency">
-                  <option value="usd">USD</option>
-                  <option value="euro">Euro</option>
-                  <option value="bdt">ZMW</option>
-                </select>
-              </li>
-              <li class="select-opt">
-                <a href="#"><span class="lnr lnr-magnifier"></span></a>
-              </li>
+              
+              
             </ul>
           </div>
         </li>
         <li class="head-responsive-right pull-right">
           <div class="header-top-right">
             <ul>
-              <li class="header-top-contact">+260 211 231174</li>
               <li class="header-top-contact">
-                <a href="#">Admi loginn</a>
+                <a href="tel:+260211231174">+260 211 231174</a>
               </li>
+                            
               <li class="header-top-contact">
-                <a href="#">info@africaaccesswater.org</a>
+                <a href="mailto:info@africaaccesswater.org">info@africaaccesswater.org</a>
               </li>
+              
             </ul>
           </div>
         </li>
@@ -201,8 +199,8 @@
                 data-in="fadeInDown"
                 data-out="fadeOutUp"
               >
-                <li class=" "><a href="/index.html">home</a></li>
-                <li class=""><a href="">What we do</a></li>
+                <li class=""><a href="./index.html">home</a></li>
+                <li class=""><a href="./index.html">What we do</a></li>
                 <li class="active"><a href="./projects.html">Our Projects</a></li>
                 <li class=""><a href="./index.html">Management</a></li>
                 <li class=""><a href="./index.html">contact</a></li>
@@ -222,179 +220,225 @@
     <!-- /.top-area-->
     <!-- top-area End -->
 
-    <div class="container">
-      <div class="section-header">
-        <h2>Our Projects</h2>
-        <p>
-          AfAW affirms that water is at the centre of socio-economic development
-          and advocates that water is a key resource for production, food
-          security, and poverty eradication.
-        </p>
-      </div>
 
-      <div class="row">
-        <div class="project-card">
-          <div class="project-image col-md-6">
-            <img src="./projects/project 1.jpg" alt="" />
-          </div>
-          <div class="project-body">
-            <h4>The Mphande Project</h4>
-            <p class="m-0">
-                In partnership with <b>Tevel b'Tzedek</b> (An Israeli non-profit for community development
-                Tevel b'Tzedek (shortened: Tevel) we are implementing a project in Mphande that is improving
-                the livelihoods of rural communities through community work and solar powered irrigation
-                systems.
-                <br>
-                <br>
-                Mphande area and local communities Mphande area is located 30 km south of Lusaka, home to
-                over 5,000 people. This is a poor community with 3 villages which is close to the city of
-                Lusaka.
+          <!--blog start -->
+    <section id="blog" class="blog">
+      <div class="container">
+        <div class="section-header">
+          <h2>Our Projects</h2>
+          <p>AfAW affirms that water is at the centre of socio-economic development
+            and advocates that water is a key resource for production, food
+            security, and poverty eradication.</p>
+        </div>
+        <!--/.section-header-->
+        <div class="blog-content">
+          <div class="row" >
+            <div style="width: 100%" class="text-center">
 
-                <br><br>
-                The cornerstone of the project is providing access to clean water, for drinking, irrigation,
-                and animal husbandry, by using solar pumps. The project is being implemented over 10
-                hectares of land. Providing water will enable the development of other activities that will
-                benefit the community. The following are the planned activities being executed
-                <br><br><b>A training center and demonstration plots.</b> Local farmers will receive
-                training to overcome local barriers to productive agriculture, like drylands cultivation,
-                seed production, and feed manufacturing. In addition, the center will offer financial
-                training and assistance in registering as agricultural cooperatives (to obtain funding and
-                agronomical assistance from the government).
-                <br><br><b>A unique agricultural and financial training for women from particularly low
-                    socio-economic backgrounds. </b> Under the program, groups of women and community will
-                cultivate land creative community/village revolving fund. They will receive agricultural,
-                financial, and business training as well as assistance in registering as cooperatives. At
-                the end of the two-year program, each cooperative will save enough money to set up its
-                agricultural project.
-                <br><br><b>Youth and young-adults income generation activities: </b>Integration of youth and
-                young adults in income generation and community mobility activities in agriculture and
-                health.
-                <br><br><b> Innovation Center: </b>The center will serve as a focal point for innovations
-                and research focused on providing solutions for rural communities in Africa. The center will
-                showcase and test new agricultural technologies and methods by using demonstration plots.
-                The center will connect local government, civil society, academia, the Israeli AgroTech
-                ecosystem, the local private sector, and most importantly, rural communities of smallholders
-                themselves.
-                <br><br><b>A post-harvest facility: </b>Establish a crop bulking unit and, later on, a
-                processing unit for different crops and products.
-            </p>
-          </div>
+              <div class="col-md-6 col-sm-12">
+                <div class="single-blog-item">
+                  <div class="single-blog-item-img">
+                    <img
+                      class="blog-img"
+                      src="./projects/project 1.jpg"
+                      alt="blog image"
+                    />
+                  </div>
+                  <div class="single-blog-item-txt">
+                    <h2>
+                      <a href="#"
+                      style="font-size: larger; color: rgb(0, 119, 255); font-weight: bolder;"
+                        >The Mphande Project</a
+                      >
+                    </h2>
+  
+                    <p class="text-justify">
+                      In partnership with <b>Tevel b'Tzedek</b> (An Israeli non-profit for community development
+                            Tevel b'Tzedek (shortened: Tevel) we are implementing a project in Mphande that is improving
+                            the livelihoods of rural communities through community work and solar powered irrigation
+                            systems.
+                            <br>
+                            <br>
+                            Mphande area and local communities Mphande area is located 30 km south of Lusaka, home to
+                            over 5,000 people. This is a poor community with 3 villages which is close to the city of
+                            Lusaka.
+
+                            <br><br>
+                            The cornerstone of the project is providing access to clean water, for drinking, irrigation,
+                            and animal husbandry, by using solar pumps. The project is being implemented over 10
+                            hectares of land. Providing water will enable the development of other activities that will
+                            benefit the community. The following are the planned activities being executed
+                            <br><br><b>A training center and demonstration plots.</b> Local farmers will receive
+                            training to overcome local barriers to productive agriculture, like drylands cultivation,
+                            seed production, and feed manufacturing. In addition, the center will offer financial
+                            training and assistance in registering as agricultural cooperatives (to obtain funding and
+                            agronomical assistance from the government).
+                            <br><br><b>A unique agricultural and financial training for women from particularly low
+                                socio-economic backgrounds. </b> Under the program, groups of women and community will
+                            cultivate land creative community/village revolving fund. They will receive agricultural,
+                            financial, and business training as well as assistance in registering as cooperatives. At
+                            the end of the two-year program, each cooperative will save enough money to set up its
+                            agricultural project.
+                            <br><br><b>Youth and young-adults income generation activities: </b>Integration of youth and
+                            young adults in income generation and community mobility activities in agriculture and
+                            health.
+                            <br><br><b> Innovation Center: </b>The center will serve as a focal point for innovations
+                            and research focused on providing solutions for rural communities in Africa. The center will
+                            showcase and test new agricultural technologies and methods by using demonstration plots.
+                            The center will connect local government, civil society, academia, the Israeli AgroTech
+                            ecosystem, the local private sector, and most importantly, rural communities of smallholders
+                            themselves.
+                            <br><br><b>A post-harvest facility: </b>Establish a crop bulking unit and, later on, a
+                            processing unit for different crops and products.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6 col-sm-12">
+                <div class="single-blog-item">
+                  <div class="single-blog-item-img">
+                    <img
+                      class="blog-img"
+                      src="./projects/project 2.jpg"
+                      alt="blog image"
+                    />
+                  </div>
+                  <div class="single-blog-item-txt">
+                    <h2>
+                      <a href="#"
+                       style="font-size: larger; color: rgb(0, 119, 255); font-weight: bolder;"
+                        >Shibuyunji Women Solar Powered Water Project</a
+                      >
+                    </h2>
+                    <p class="text-justify">
+                      The project provides water for drinking, agriculture irrigation, livestock and aquaculture
+                            leading to food security, increased income and better livelihoods. The project set in the
+                            middle of four (4) villages in Shibuyunji namely Shamilimo, Shambule, Shamakamba and
+                            Mwenshakembe. So far 60 women allocated with 50mx50m portion of land and water running into
+                            their fields, are benefiting from the first phase of the project focusing on irrigation and
+                            vegetable growing and business.
+                            <br>
+                            <br>
+
+                            The project is situated in Shibuyunji 50 Kilometers away from the capital city Lusaka of
+                            Zambia. Shibuyunji is in agro-ecological region II-b of Zambia which is one of the places
+                            worst hit with climate change, drought and in need for water both for drinking and
+                            productive us.
+                            <br>
+                            <br>
+
+                            Success stories have been recorded of the project with at least 40 women having a minimum of
+                            $100 per month are supporting their families. This model of development shows that with an
+                            investment of just $100 per women or household can create sustainable income for women
+                            through solar-powered water systems for productive use. If the targeted 60 women can have a
+                            total of $6,000 per month the four villages of Shibuyunji will create a strong rural economy
+                            that will lift the villages from poverty to better livelihoods, health and wealth. Help
+                            achieve this goal increased support in additional infrastructural support.
+                            <br>
+                            <br>
+
+                            <b>This project will be transformed in Centre of Excellence.</b>
+                            <br>
+
+                            This project was received funding from different partners that included:
+                            <br>
+                            Baba Group of Companies – whose supported the intial water systems
+                            <br>
+                            <br>
+
+                            AfAW UK office and Board Member – Supporting administration and more specifically Maurice
+                            Dillon for his generosity supporting inputs for women
+                            <br>
+                            <br>
+
+                            <b>State of Israel through MashaV</b> (Agency for International Development Cooperation).
+                            Their support went towards the enhancing solar powered irrigation systems, an aquaculture
+                            system and fencing of the women community training farm. Program design and operations for
+                            the joint program was done through a partnership of an Israeli company Green2000 and NGO
+                            Tevel b'Tzedek.
+                    </p>
+                  </div>
+                </div>
+              </div>
+  
+              <div class="col-md-12 col-sm-12">
+                <div class="single-blog-item">
+                  <div class="single-blog-item-img">
+                    <img
+                      class="blog-img"
+                      src="./projects/project 3.jpg"
+                      alt="blog image"
+                    />
+                  </div>
+                  <div class="single-blog-item-txt">
+                    <h2>
+                      <a href="#"
+                        style="font-size: larger; color: rgb(0, 119, 255); font-weight: bolder;"
+                        >Community Preparedness on Floods and Disaster Risk
+                        Management.</a
+                      >
+                    </h2>
+                    <p class="text-justify">
+                      The city of Lusaka has been affected by flooding mainly emanating from lack of serviced
+                      land, speculation on land, complex procedures and lack of correct information of land use
+                      and land ownership, lack of human resources, the slow pace of issuing security of land
+                      tenure, the failure of effective master planning, increase in illegal settlements and
+                      political inference in land allocation and poor waste management systems.
+                      <br>
+                      <br>
+                      Every year during the rain season, there are perennial floods in Makeni Villa Ward 14 in
+                      Kanyama Constituency thereby causing challenges such as impassable roads, waterborne
+                      diseases, mosquito bleeding points to mention but a few. As an organization, it is our view
+                      that there is need to implement measures to help alleviate or find adaptive means to the
+                      problem.
+                      <br>
+                      <br>
+
+                      The project’s goal is to have a prepared community to handle floods for improved
+                      livelihoods.
+                      <br>
+
+                      <b>Main Objective: </b>To facilitate and promote community preparedness on floods and
+                      disaster risk management in Makeni Villa Ward 14.
+                      <br>
+                      <br>
+
+                      The project which has already started having consultation and engagement meeting with
+                      different stakeholders hopes increase awareness on preparedness and create actions that
+                      resolved the flooding challenges. And that flood should not be seen as a threat but if
+                      harvested properly and letting the water path is important in replenishing recharge areas
+                      that help communities to have water.
+                      <br>
+                      <br>
+
+                      The project is working with the community, government and other non-government organization.
+                      <br>
+                      <br>
+
+                      Furthermore, the project intends to have more of public commitment, knowledge development
+                      and training including intervention that harvests water for socio and economic benefits.
+                    </p>
+                  </div>
+                </div>
+              </div>
+  
+          
+            </div>
+            </div>
+
+
+
+         
         </div>
       </div>
+      <!--/.container-->
+    </section>
+    <!--/.blog-->
+    <!--blog end -->
 
-      <div class="row">
-        <div class="project-card">
-          <div class="project-image col-md-6">
-            <img src="./projects/project 2.jpg" alt="" />
-          </div>
-          <div class="project-body">
-            <h4>Shibuyunji Women Solar Powered Water Project</h4>
-            <p class="m-0">
-                The project provides water for drinking, agriculture irrigation, livestock and aquaculture
-                leading to food security, increased income and better livelihoods. The project set in the
-                middle of four (4) villages in Shibuyunji namely Shamilimo, Shambule, Shamakamba and
-                Mwenshakembe. So far 60 women allocated with 50mx50m portion of land and water running into
-                their fields, are benefiting from the first phase of the project focusing on irrigation and
-                vegetable growing and business.
-                <br>
-                <br>
 
-                The project is situated in Shibuyunji 50 Kilometers away from the capital city Lusaka of
-                Zambia. Shibuyunji is in agro-ecological region II-b of Zambia which is one of the places
-                worst hit with climate change, drought and in need for water both for drinking and
-                productive us.
-                <br>
-                <br>
 
-                Success stories have been recorded of the project with at least 40 women having a minimum of
-                $100 per month are supporting their families. This model of development shows that with an
-                investment of just $100 per women or household can create sustainable income for women
-                through solar-powered water systems for productive use. If the targeted 60 women can have a
-                total of $6,000 per month the four villages of Shibuyunji will create a strong rural economy
-                that will lift the villages from poverty to better livelihoods, health and wealth. Help
-                achieve this goal increased support in additional infrastructural support.
-                <br>
-                <br>
-
-                <b>This project will be transformed in Centre of Excellence.</b>
-                <br>
-
-                This project was received funding from different partners that included:
-                <br>
-                Baba Group of Companies – whose supported the intial water systems
-                <br>
-                <br>
-
-                AfAW UK office and Board Member – Supporting administration and more specifically Maurice
-                Dillon for his generosity supporting inputs for women
-                <br>
-                <br>
-
-                <b>State of Israel through MashaV</b> (Agency for International Development Cooperation).
-                Their support went towards the enhancing solar powered irrigation systems, an aquaculture
-                system and fencing of the women community training farm. Program design and operations for
-                the joint program was done through a partnership of an Israeli company Green2000 and NGO
-                Tevel b'Tzedek.
-
-            </p>
-          </div>
-        </div>
-      </div>
-
-      <div class="row">
-        <div class="project-card">
-          <div class="project-image col-md-6">
-            <img src="./projects/project 3.jpg" alt="" />
-          </div>
-          <div class="project-body">
-            <h4>Community Preparedness on Floods and Disaster Risk
-                Management.</h4>
-                <p class="m-0">
-                    The city of Lusaka has been affected by flooding mainly emanating from lack of serviced
-                    land, speculation on land, complex procedures and lack of correct information of land use
-                    and land ownership, lack of human resources, the slow pace of issuing security of land
-                    tenure, the failure of effective master planning, increase in illegal settlements and
-                    political inference in land allocation and poor waste management systems.
-                    <br>
-                    <br>
-                    Every year during the rain season, there are perennial floods in Makeni Villa Ward 14 in
-                    Kanyama Constituency thereby causing challenges such as impassable roads, waterborne
-                    diseases, mosquito bleeding points to mention but a few. As an organization, it is our view
-                    that there is need to implement measures to help alleviate or find adaptive means to the
-                    problem.
-                    <br>
-                    <br>
-
-                    The project’s goal is to have a prepared community to handle floods for improved
-                    livelihoods.
-                    <br>
-
-                    <b>Main Objective: </b>To facilitate and promote community preparedness on floods and
-                    disaster risk management in Makeni Villa Ward 14.
-                    <br>
-                    <br>
-
-                    The project which has already started having consultation and engagement meeting with
-                    different stakeholders hopes increase awareness on preparedness and create actions that
-                    resolved the flooding challenges. And that flood should not be seen as a threat but if
-                    harvested properly and letting the water path is important in replenishing recharge areas
-                    that help communities to have water.
-                    <br>
-                    <br>
-
-                    The project is working with the community, government and other non-government organization.
-                    <br>
-                    <br>
-
-                    Furthermore, the project intends to have more of public commitment, knowledge development
-                    and training including intervention that harvests water for socio and economic benefits.
-
-                </p>
-          </div>
-        </div>
-      </div>
-
-    </div>
+    
 
     <!--footer start-->
     <footer id="footer" class="footer">
@@ -506,5 +550,20 @@
 
     <!--Custom JS-->
     <script src="assets/js/custom.js"></script>
+    <script type="text/javascript">
+      function googleTranslateElementInit() {
+          new google.translate.TranslateElement(
+              {pageLanguage: 'en'},
+              'google_translate_element'
+          );
+      }
+  </script>
+
+  <script type="text/javascript"
+          src=
+"https://translate.google.com/translate_a/element.js?
+cb=googleTranslateElementInit">
+  </script>
   </body>
 </html>
+
